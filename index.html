@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip-Calculator</title>
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- Link Font Awesome Icons -->
+  <link rel="stylesheet" 
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <!-- HTML -->
+  <div class="main-container">
+<h1>S P L I<br>T T E R</h1>
+<div class="container">
+  <form id="form">
+  <div class="bill-container">
+    <label for="bill">Bill 
+      <span id="billError"></span> </label><br>
+    <p>$</p>
+    <input type="number" name="bill" id="bill" placeholder="0">
+  </div>
+    <div class="select-tip"> Select Tip %<br>
+    <button class="tip-btn" id="fivePercent">5%</button>
+    <button class="tip-btn" id="tenPercent">10%</button>
+    <button class="tip-btn" id="fifteenPercent">15%</button><br>
+    <button class="tip-btn" id="twentyFivePercent">25%</button>
+    <button class="tip-btn" id="fiftyPercent">50%</button>
+    <input type="number" id="custom" placeholder="Custom"></input></div><br>
+    <div class="people-container">
+    <label for="people">Number of People 
+      <span id="peopleError"></span></label><br>
+    <i class="fa-solid fa-user"></i>
+    <input type="number" name="people" id="people" placeholder="0">
+  </div>
+    <div class="panel">
+      <div class="tipAmount" id="tipAmount">Tip Amount <br> 
+        <p>/ person</p> </div>
+      <div class="totalAmount" id="totalAmount">Total<br>  
+        <p>/ person</p> </div>
+        <div class="displayTip" id="displayTip">
+          <span id="tip">$0.00</span></div>
+        <div class="displayTotal" id="displayTotal">
+          <span id="total">$0.00</span></div>
+        <button class="reset">RESET</button>
+    </div>
+  </div>
+</form>
+</div>
+</div>
+<!-- SCRIPT -->
+  <script src="./script.js"></script>
+</body>
+</html>
